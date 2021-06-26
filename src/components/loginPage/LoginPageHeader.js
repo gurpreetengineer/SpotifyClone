@@ -16,9 +16,9 @@ function LoginPageHeader() {
 					</HeaderLogoLink>
 				</LeftHeaderContainer>
 				<RightHeaderContainer>
-					<HyperLinks>Premium</HyperLinks>
-					<HyperLinks>Support</HyperLinks>
-					<HyperLinks style={{ margin: '21px 0 21px 12px' }}>Download</HyperLinks>
+					<HyperLinks href="https://www.spotify.com/us/premium/">Premium</HyperLinks>
+					<HyperLinks href="https://support.spotify.com/">Support</HyperLinks>
+					<HyperLinks href="https://www.spotify.com/us/download/" style={{ margin: '21px 0 21px 12px' }}>Download</HyperLinks>
 					<Separator />
 					<SpotifyLoginLink href={loginURI}>Login with Spotify </SpotifyLoginLink>
 				</RightHeaderContainer>
@@ -56,6 +56,8 @@ const RightHeaderContainer = styled.div`
 const HyperLinks = styled.a`
 	margin: 21px 12px;
 	font-weight: 500;
+	color: white;
+	text-decoration: none;
 
 	&:hover {
 		color: #1ED760;

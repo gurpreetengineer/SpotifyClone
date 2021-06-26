@@ -9,6 +9,9 @@ function LoginPageBody() {
 			<BodyHeading>
 				<Heading>Listening is everything</Heading>
 			</BodyHeading>
+			<SubHeading>
+				Millions of songs and podcasts. No credit card needed.
+			</SubHeading>
 		</LoginPageBodyContainer>
 	);
 }
@@ -22,12 +25,15 @@ const LoginPageBodyContainer = styled.div`
 
 	// for <Heading>
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 `;
 const BodyHeading = styled.div`
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	flex-direction: column;
+	padding-bottom: 70px;
 `;
 const Heading = styled.div`
 	color: #1ED760;
@@ -39,6 +45,12 @@ const Heading = styled.div`
 	transform: translate(125px, 0px);
 	text-indent: -1.3em;
 	line-height: 166px;
+`;
+
+const SubHeading = styled.div`
+	font-size: 18px;
+	line-height: 24px;
+	color: #1ED760;
 `;
 
 
