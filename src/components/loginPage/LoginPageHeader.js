@@ -68,13 +68,13 @@ const Separator = styled.div`
 	height: 16px;
 	width: 1px;
 	background-color: white;
-	margin: 22px;	
+	margin: 22px;
 `;
 const SpotifyLoginLink = styled.a`
 	padding: 16px 18px;
 	background-color: #1ED760;
 	border-radius: 99px;
-	height: 14px;	
+	height: 14px;
 	color: inherit;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -84,7 +84,10 @@ const SpotifyLoginLink = styled.a`
 	&:hover {
 		cursor: pointer;
 		text-decoration: none;
+		background-color: #0cab44e0;
+		transition: 0.5s;
 	}
+
 `;
 
 export default LoginPageHeader;

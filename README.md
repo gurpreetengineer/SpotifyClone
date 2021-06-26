@@ -25,6 +25,12 @@ For embedding new font-family into styled component (refer to file GlobalFonts.j
 __https://dev.to/alaskaa/how-to-import-a-web-font-into-your-react-app-with-styled-components-4-1dni__
 __https://www.programmersought.com/article/93611321309/__
 
+For GIFs and SVGs
+__https://icons8.com/icons__
+
+For transition effect
+__https://www.w3schools.com/howto/howto_css_animate_buttons.asp__
+
 
 ## Available Scripts
 
