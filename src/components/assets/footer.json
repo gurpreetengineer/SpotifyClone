@@ -5,15 +5,15 @@
 		"data": [{
 				"key": 11,
 				"heading": "About",
-				"source": ""
+				"source": "https://www.spotify.com/us/about-us/contact/"
 			}, {
 				"key": 12,
 				"heading": "Jobs",
-				"source": ""
+				"source": "https://www.spotifyjobs.com/"
 			}, {
 				"key": 13,
 				"heading": "For the Record",
-				"source": ""
+				"source": "https://newsroom.spotify.com/"
 			}]
 	}, 
 	{
@@ -22,23 +22,23 @@
 		"data": [{
 				"key": 21,
 				"heading": "For Artists",
-				"source": ""
+				"source": "https://artists.spotify.com/"
 			}, {
 				"key": 22,
 				"heading": "Developers",
-				"source": ""
+				"source": "https://developer.spotify.com/"
 			}, {
 				"key": 23,
 				"heading": "Advertising",
-				"source": ""
+				"source": "https://ads.spotify.com/"
 			}, {
 				"key": 24,
 				"heading": "Investors",
-				"source": ""
+				"source": "https://investors.spotify.com/"
 			}, {
 				"key": 25,
 				"heading": "Vendors",
-				"source": ""
+				"source": "https://spotifyforvendors.com/"
 			}]
 		}, 
 	{
@@ -47,15 +47,15 @@
 		"data": [{
 				"key": 31,
 				"heading": "Support",
-				"source": ""
+				"source": "https://support.spotify.com/"
 			},{
 				"key": 32,
 				"heading": "Web Developer",
-				"source": ""
+				"source": "https://open.spotify.com/"
 			},{
 				"key": 33,
 				"heading": "Free Mobile App",
-				"source": ""
+				"source": "https://www.spotify.com/us/free/"
 			}]
 	}
 ]

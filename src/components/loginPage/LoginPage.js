@@ -8,18 +8,13 @@ import LoginPageFooter from './LoginPageFooter';
 function LoginPage() {
 	return (
 		<LoginPageContainer>
-			<LoginPageHeaderComponent />
-			<LoginPageBodyComponent />
-			<LoginPageFooterComponent />
+			<LoginPageHeader />
+			<LoginPageBody />
+			<LoginPageFooter />
 		</LoginPageContainer>
 	);
 }
 
-const LoginPageContainer = styled.div`
-
-`;
-const LoginPageHeaderComponent = styled(LoginPageHeader)``;
-const LoginPageBodyComponent = styled(LoginPageBody)``;
-const LoginPageFooterComponent = styled(LoginPageFooter)``;
+const LoginPageContainer = styled.div``;
 
 export default LoginPage;
