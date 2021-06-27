@@ -1,5 +1,4 @@
-What's up Fella? I feel like we both are pumped in here. I am creating a Spotify clone in here!
-Yeah! That's purely that. I believe it's going to be awesome!
+# What's up Fella? I feel like we both are pumped in here. I am creating a Spotify clone in here! Yeah! That's purely that. I believe it's going to be awesome!
 
 So, let's start with the topics covered:
 
@@ -13,7 +12,7 @@ So, let's start with the topics covered:
 ### Neat Code with EsLint setup
 
 
-## Important Websites that helped me:
+## Important Websites that helped building this project:
 
 For Favicon.ico icon (tab bar):
 __https://www.freeiconspng.com/downloadimg/15391__
@@ -31,6 +30,17 @@ __https://icons8.com/icons__
 For transition effect
 __https://www.w3schools.com/howto/howto_css_animate_buttons.asp__
 
+For React Routes
+__https://reactrouter.com/web/api/Redirect__
+The 'window' object 
+__https://www.samanthaming.com/tidbits/86-window-location-cheatsheet/__
+
+For Local Storage with React 
+__https://programmingwithmosh.com/react/localstorage-react/__
+
+For cryptography:
+[not using] __https://www.code-sample.com/2019/12/react-encryption-decryption-data-text.html__
+[using] __https://www.npmjs.com/package/cryptr__
 
 ## Available Scripts
 
