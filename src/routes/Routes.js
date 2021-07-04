@@ -1,14 +1,23 @@
+/* eslint-disable no-empty-pattern */
 import React, { useState, useEffect } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Cryptr from 'cryptr';
+import SpotifyWebApi from 'spotify-web-api-js';
+
+import { fetchTokenFromURI } from '../ContextAPI/spotify';
+import { useStateProvider } from '../ContextAPI/Provider';
+import { actionTypes } from '../ContextAPI/reducer';
 import LoginPage from '../components/loginPage/LoginPage';
 import PlayerPage from '../components/userPage/PlayerPage';
 
-import { fetchTokenFromURI } from '../ContextAPI/spotify';
 
+// Without 'new', it won't work. We've to make it run time.
+const spotify = new SpotifyWebApi();
 
 function Routes() {
-	const [accessToken, setAccessToken] = useState('');
+	const [{}, dispatch] = useStateProvider();
+
+	const [token, setToken] = useState('');
 	const _hash = fetchTokenFromURI();
 
 	// Created an instance to encrypt access token coming from spotify # value.
@@ -18,15 +27,22 @@ function Routes() {
 		if (_hash) {
 			console.log('_hash', _hash);
 			localStorage.setItem('access_token', cryptr.encrypt((_hash.access_token).toString()));
-			console.log('decryption: ', cryptr.decrypt(localStorage.getItem('access_token')));
 		}
-		setAccessToken(localStorage.getItem('access_token'));
+		console.log('sportify ', spotify);
+		if(localStorage.getItem('access_token') !== null && localStorage.getItem('access_token') !== undefined){
+			spotify.setAccessToken(cryptr.decrypt(localStorage.getItem('access_token')));
+			spotify.getMe().then(user => dispatch({
+				type: actionTypes.SET_USER,
+				user: user
+			}));
+		}
+		setToken(localStorage.getItem('access_token'));
 	}, []);
 
-	
+
 	return (
 		<Switch>
-			{accessToken === undefined || accessToken === null ? (
+			{token === undefined || token === null ? (
 				<>
 					{/* Can't do redirect because if I do this, it will clear the URI which will result in*/}
 					{/* no hash value at first place. This will end up a person redirect to "/" path and  */}

@@ -17,7 +17,7 @@ So, let's start with the topics covered:
 For Favicon.ico icon (tab bar):
 __https://www.freeiconspng.com/downloadimg/15391__
 
-For Sportify-like Font (not exact)
+For Spotify-like Font (not exact)
 __https://cofonts.com/circular-font/__
 
 For embedding new font-family into styled component (refer to file GlobalFonts.js)

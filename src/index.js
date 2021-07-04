@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { StateProvider } from './ContextAPI/Provider';
+import { initialState, reducer } from './ContextAPI/reducer';
+
 import './index.css';
 import App from './App';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
+		<StateProvider initialState={initialState} reducer={reducer}>
+			<Router>
+				<App />
+			</Router>
+		</StateProvider>
 	</React.StrictMode>,
 	document.getElementById('root'),
 );
